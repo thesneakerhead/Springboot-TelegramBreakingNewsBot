@@ -1,0 +1,13 @@
+TelegramBot\TelegramServer\RestApiController.class
+TelegramBot\TelegramServer\Article.class
+TelegramBot\TelegramServer\Source.class
+TelegramBot\TelegramServer\Feed.class
+TelegramBot\TelegramServer\TelegramServerApplication.class
+TelegramBot\TelegramServer\BreakingNewsBot.class
+TelegramBot\TelegramServer\Flag.class
+TelegramBot\NewsApiPojo\Article.class
+TelegramBot\TelegramServer\FlagRegister.class
+TelegramBot\TelegramServer\SubArticle.class
+TelegramBot\TelegramServer\Root.class
+TelegramBot\NewsApiPojo\Source.class
+TelegramBot\NewsApiPojo\Root.class
