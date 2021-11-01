@@ -181,14 +181,14 @@ public class BreakingNewsBot extends TelegramLongPollingBot {
 	@Override
 	public String getBotUsername() {
 		// TODO Auto-generated method stub
-		return "LatestBreakingNews_bot";
+		return "ENTER BOT NAME HERE";
 		
 	}
 
 	@Override
 	public String getBotToken() {
 		// TODO Auto-generated method stub
-		return "2093741185:AAGnmpOUAd4ai29tauiBhwn4YFnTzc0km8U";
+		return "ENTER BOT TOKEN HERE";
 	}
 	
 	public CompletableFuture<String> getNews() throws IOException
@@ -211,7 +211,7 @@ public class BreakingNewsBot extends TelegramLongPollingBot {
 		OkHttpClient client = new OkHttpClient();
 		HttpUrl.Builder httpBuilder = HttpUrl.parse("https://newsapi.org/v2/everything").newBuilder();
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("apiKey", "00b5aabec7b342459576b82d8c94ec8f");
+		params.put("apiKey", "API KEY");
 		params.put("q", message);
 	    if (params != null) {
 	       for(Map.Entry<String, String> param : params.entrySet()) {
@@ -240,7 +240,7 @@ public class BreakingNewsBot extends TelegramLongPollingBot {
 		OkHttpClient client = new OkHttpClient();
 		HttpUrl.Builder httpBuilder = HttpUrl.parse("https://newsapi.org/v2/top-headlines").newBuilder();
 		HashMap<String, String> params = new HashMap<String, String>();
-		params.put("apiKey", "00b5aabec7b342459576b82d8c94ec8f");
+		params.put("apiKey", "API KEY");
 		params.put("country", country);
 	    if (params != null) {
 	       for(Map.Entry<String, String> param : params.entrySet()) {
@@ -296,7 +296,7 @@ public class BreakingNewsBot extends TelegramLongPollingBot {
 				.url("https://google-news.p.rapidapi.com/v1/top_headlines?lang=en&country=US")
 				.get()
 				.addHeader("x-rapidapi-host", "google-news.p.rapidapi.com")
-				.addHeader("x-rapidapi-key", "2829cb0116msh0a89264a03c696dp1ede28jsn0facb3834b7b")
+				.addHeader("x-rapidapi-key", "API KEY")
 				.build();
 		try(Response response = client.newCall(request).execute())
 		{
